@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>精通置中</title>
+<style>
+h1 {
+text-align: center;
+/*方法1 */
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+/* 方法2 */
+/* text-align: center;
+line-height: 800px; */
+/* 方法3 */
+/* display: flex;
+justify-content: center;
+align-items: center;
+line-height: 800px; */
+}
+
+.container {
+width: 500px;
+height: 500px;
+background-color: lightgreen;
+/* 區塊div 置中 方法1 */
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+/* 區塊div 置中 方法2 */
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+/* 區塊div裡頭的文字置中 方法1 */
+/* text-align: center;
+line-height: 500px; */
+/* 區塊div裡頭的文字置中 方法2 */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container2 {
+width: 400px;
+height: 400px;
+background-color: rgb(249, 183, 1);
+opacity: 0.5;
+/* 區塊置中 */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+/* 在區塊裡頭的東西要置中，使用flex */
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.box {
+width: 100px;
+height: 100px;
+background-color: rgb(61, 155, 255);
+/* 小box裡頭文字置中 */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.img1 {
+width: 200px;
+height: 140px;
+/* 方法1 */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.container3 {
+width: 300px;
+height: 300px;
+background-color: rgb(249, 1, 208);
+opacity: 0.5;
+/* 區塊置中 */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+/* 在區塊裡頭的東西要置中，使用flex */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.img2 {
+width: 200px;
+height: 140px;
+/* 方法1 */
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+}
+</style>
+</head>
+
+<body>
+<!-- 置中文字 -->
+<h1>置中文字</h1>
+
+<!-- 置中div 裡頭文字 -->
+<div class="container">
+<h2>在div裡頭的文字</h2>
+</div>
+<!-- 置中div 裡頭的區塊-->
+<div class="container2">
+<div class="box">
+ABC
+</div>
+<div class="box">
+ABC
+</div>
+<div class="box">
+ABC
+</div>
+</div>
+<!-- 圖片置中 -->
+
+<!-- <img class="img1" src="cwc1.PNG"> -->
+
+<!-- 圖片在div裡頭的置中 -->
+<div class="container3">
+<img class="img2" src="cwc1.PNG">
+
+</div>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>精通置中</title>
+<style>
+h1 {
+text-align: center;
+/*方法1 */
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+/* 方法2 */
+/* text-align: center;
+line-height: 800px; */
+/* 方法3 */
+/* display: flex;
+justify-content: center;
+align-items: center;
+line-height: 800px; */
+}
+
+.container {
+width: 500px;
+height: 500px;
+background-color: lightgreen;
+/* 區塊div 置中 方法1 */
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+/* 區塊div 置中 方法2 */
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+/* 區塊div裡頭的文字置中 方法1 */
+/* text-align: center;
+line-height: 500px; */
+/* 區塊div裡頭的文字置中 方法2 */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container2 {
+width: 400px;
+height: 400px;
+background-color: rgb(249, 183, 1);
+opacity: 0.5;
+/* 區塊置中 */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+/* 在區塊裡頭的東西要置中，使用flex */
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.box {
+width: 100px;
+height: 100px;
+background-color: rgb(61, 155, 255);
+/* 小box裡頭文字置中 */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.img1 {
+width: 200px;
+height: 140px;
+/* 方法1 */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.container3 {
+width: 300px;
+height: 300px;
+background-color: rgb(249, 1, 208);
+opacity: 0.5;
+/* 區塊置中 */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+/* 在區塊裡頭的東西要置中，使用flex */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.img2 {
+width: 200px;
+height: 140px;
+/* 方法1 */
+/* position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
+}
+</style>
+</head>
+
+<body>
+<!-- 置中文字 -->
+<h1>置中文字</h1>
+
+<!-- 置中div 裡頭文字 -->
+<div class="container">
+<h2>在div裡頭的文字</h2>
+</div>
+<!-- 置中div 裡頭的區塊-->
+<div class="container2">
+<div class="box">
+ABC
+</div>
+<div class="box">
+ABC
+</div>
+<div class="box">
+ABC
+</div>
+</div>
+<!-- 圖片置中 -->
+
+<!-- <img class="img1" src="cwc1.PNG"> -->
+
+<!-- 圖片在div裡頭的置中 -->
+<div class="container3">
+<img class="img2" src="cwc1.PNG">
+
+</div>
+
+</body>
+
+</html>
